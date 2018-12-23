@@ -1,0 +1,235 @@
+@font-face{
+    font-family:Taylor Light;
+    src:url('fonts/taylor-light.woff2'), url('taylor-light.woff');
+}
+@font-face{
+    font-family:Taylor Regular;
+    src:url('fonts/taylor-regular.woff2'), url('taylor-regular.woff');
+}
+@font-face{
+    font-family:'Taylor Bold';
+    src:url('fonts/taylor-bold.woff2'), url('taylor-bold.woff');
+}
+@font-face{
+    font-family:'Taylor Black';
+    src:url('fonts/taylor-black.woff2'), url('taylor-black.woff');
+}
+@font-face{
+    font-family:'Taylor Light Italic';
+    src:url('fonts/taylor-lightitalic.woff2'), url('taylor-lightitalic.woff');
+}
+@font-face{
+    font-family:'Taylor Regular Italic';
+    src:url('fonts/taylor-regularitalic.woff2'), url('taylor-regularitalic.woff');
+}
+@font-face{
+    font-family:'Taylor Bold Italic';
+    src:url('fonts/taylor-bolditalic.woff2'), url('taylor-bolditalic.woff');
+}
+@font-face{
+    font-family:'Taylor Black Italic';
+    src:url('fonts/taylor-blackitalic.woff2'), url('taylor-blackitalic.woff');
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500');
+
+::selection{
+    color:#fff;
+    background-color:orange;
+}
+
+@keyframes spin{
+    0%{transform:  translate(-50%, -50%) rotate(0deg);}
+  100%{transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+body{
+    background-color:#1a1a1a;
+    color:#fff;
+    padding:0px;
+    margin:0;
+    font-family: taylor regular;
+    letter-spacing: 0.04em;
+    font-size:24px;
+
+}
+h1{
+    font-size:200px;
+    line-height: 0;
+}
+h2{
+    font-size:64px;
+}
+h3{
+    font-family: taylor light;
+    font-size:24px;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+}
+p{
+    font-family: roboto mono;
+    font-weight:300;
+    font-size:14px;
+}
+div.progress-bar{
+    width:0px;
+    position:fixed;
+    top:0;
+    left:0;
+    height:20px;
+    background-color:orange;
+    z-index: 2;
+}
+div.click-image{
+    position:absolute;
+    top:0;
+    left:50%;
+    width:50%;
+}
+div.click-image img{
+    position: absolute;
+    max-height: 50px;
+    animation: spin linear 30s infinite;
+}
+.clear{
+    position: fixed;
+    top:40px;
+    right:40px;
+    z-index: 1;
+    opacity: 0;
+}
+.clear-open{
+    opacity: 1;
+}
+header{
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    color:#000;
+    top:20px;
+    left:20px;
+    width:80%;
+    z-index: 1;
+}
+headrer div{
+    display:inline;
+    
+}
+section.hero{
+    background-color:orange;
+    padding:200px;
+    height:100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:80%;
+}
+.first{
+      background-image:url('images/hero.svg');
+}
+
+section.intro{
+    margin-top:200px;
+    height:100vh;
+    text-align: left;
+    display: flex; 
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:60px;
+}
+.intro-title{
+    width:30%;
+}
+.intro-desc{
+    width:60%;
+}
+
+section.image-full{
+    width:100%;
+}
+section.image-full img{
+    max-width:100%;
+}
+section.grid-container{
+    width:100%;
+    background-color:#f2f2f2;
+    padding: 230px 0;
+    background-attachment: fixed;
+}
+.grid-intro-text{
+    color:#000;
+    text-align: left;
+    width:80%;
+    margin:0 auto;
+    font-size:44px;
+    font-family:taylor regular italic;
+}
+section.grid{
+  display: grid;
+    
+    grid-template-columns: repeat(20, 1fr);
+    background-color:#f2f2f2;
+    width:80%;
+    margin:100px auto;
+
+}
+
+section.grid div{
+    height:60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+    border-top:1px solid #000;
+    padding-bottom:20px;
+
+
+}
+.hover{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color:rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+ 	justify-content: center;
+  align-items: center;
+	visibility: hidden;
+  transition:  all .05s;
+  pointer-events: none;
+  font-size: 100px;
+}
+
+
+section.type-tester{
+    display: flex;
+    justify-content: space-between;
+    margin:400px 0;
+    border-top:1px solid #fff;
+    padding:40px 0;
+}
+
+section.options{
+    height:100vh;
+    width: 20%;
+}
+div.option{
+    width:100%;
+}
+div.output{
+    width:75%;
+    height:auto;
+    font-size:64px;
+    background-color:#1a1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-family:taylor light;
+    overflow-y:visible;
+}
+
+
+
+
+
+
+
