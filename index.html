@@ -45,21 +45,59 @@
         <h2> Taylor </h2>
     </div>
     <div class="intro-desc">
-        <h2> A contemporary wedge-serif typeface inspired by the chunky newsprint faces of the turn of the century</h2>
-<!--
-        <h3>Taylor is a contemporary wedge-serif typeface loosely inspired by the chunky newsprint faces of the turn of the century. Brimming with personality, Taylor is characterized by it's large, triangular serifs, wide aperture, and subtly angular curves. While the Black weight lends itself well to bold, impactful headlines, the mid-weights work well for body copy, with high legibility down to 10pt. The full feature set of the family includes standard and discretionary ligatures, proportional and tabular numerals, fractions and mathematical symbols, standard and extended punctuation, diacritical marks and language support for 50+ latin languages.
+        <h2> <em>A contemporary wedge-serif typeface inspired by the chunky newsprint faces of the turn of the century</em></h2>
+        
+        <h3>Taylor is characterized by it's large, triangular serifs, wide aperture, and subtly angular curves. While the Black weight lends itself well to bold, impactful headlines, the mid-weights work well for body copy, with high legibility down to 10pt. The full feature set of the family includes standard and discretionary ligatures, proportional and tabular numerals, fractions and mathematical symbols, standard and extended punctuation, diacritical marks and language support for 50+ latin languages.</h3>
 
-Taylor was created primarily as a typographic exercise, with the overarching goal of gaining a more in-depth understanding of the painstaking process of working with typography on this scale. The final result is a fully functional typeface in 4 weights, roman and italic, with a 42 page specimen booklet showcasing some of it's defining features. It is not yet available for download/commercial use.</h3>
--->
     </div> 
 </section>
     
+    
+    
+<section class="hero second">
+    
+
+</section>
+    
+<img src='images/taylor-3.svg'>
+    
+<section class="parallax-1">
+    
+    
+    <img class="parallax-img-1" src="images/click-04.svg">
+     <img class="parallax-img-3" src="images/click-04.svg">
+     <img sclass="parallax-img-2" rc="images/click-04.svg">
+    
+    
+    
+    
+    
+</section>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <section class="image-full">
     <img src="images/taylor-4.svg">
-    <img src='images/taylor-3.svg'>
+   </section>
+    
+<section class='double'>
+        <div class="double-left"></div>
+        <div class="double-right"></div>
+        
 </section>
+    
+    
+
 <section class="grid-container">
-    <div class="grid-intro-text"> taylor character set</div>
+    <div class="left-rotate"><p>Taylor Regular </p></div>
+    <div class="right-rotate"><p>Character Set </p></div>
+    <div class="grid-intro-text"> Meet the characters</div>
         <section class="grid">
             <div>A</div>
               <div>B</div>
@@ -308,10 +346,16 @@ Taylor was created primarily as a typographic exercise, with the overarching goa
     
 
 <section class="type-tester">
+<section class="bg-circles">
+    <div data-color="blue" data-typecolor="white" class='blue circle'></div>
+    <div data-color="orange" data-typecolor="white" class='orange circle'></div>
+    <div data-color="white" data-typecolor="blue" class='white circle'></div>
+    <div data-color="black" data-typecolor="white" class='black circle'></div>
+</section>
 <section class="options">
     
-    <div class="option">
-        <label>Style  </label>
+    <div class="option custom-select">
+<!--        <label>Style  </label>-->
         <select name="typeface">
         <option value="Taylor Light">Taylor Light</option>
         <option value="Taylor Light Italic"> Taylor Light Italic</option>
@@ -325,35 +369,31 @@ Taylor was created primarily as a typographic exercise, with the overarching goa
     </div>
     
     <div class="option">
-        <label> Type Size </label>
-        <input type="range" name="type-size" min=14 max=400 value=64>
+        <label> Type Size <span class="typesize-output">200px</span></label>
+        <input type="range" name="type-size" min=14 max=400 value=200>
     </div>
     
       <div class="option">
-        <label> Leading </label>
-        <input type="range" name="leading" min=0.4 max=2.5 value=1.5 step =0.05>
+        <label> Leading <span class="leading-output">1.5</span></label>
+        <input type="range" name="leading" min=0.8 max=2.5 value=1.5 step =0.05>
     </div>
     
       <div class="option">
-        <label> Tracking </label>
+        <label> Tracking <span class="tracking-output">0</span></label>
         <input type="range" name="tracking" min=-0.1 max=0.2 value=0 step=0.01>
     </div>
     
 </section>  
-    
-    
-    
-    
 
+
+<div class="output" contenteditable="true"> Try Taylor... </div> 
 
     
     
-
+</section>   
     
     
     
-   <div class="output" contenteditable="true">Try Me </div> 
-  </section>      
     
  </main>   
     
@@ -365,9 +405,11 @@ Taylor was created primarily as a typographic exercise, with the overarching goa
 </footer>
 
     
- <script src="jquery.js"></script>   
+ <script src="jquery.js"></script>  
+<script src="select-style.js"></script> 
 <!--<script src="click.js"></script>     -->
 <script src="parallax.js"></script> 
+<script src="background-color.js"></script>
 <script src="gridhover.js"></script>
 <script src="progress-bar.js"></script>   
 <script src="type-tester.js"></script>
