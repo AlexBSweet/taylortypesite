@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 315 364" style="enable-background:new 0 0 315 364;" xml:space="preserve">
+	 viewBox="0 0 146 169" style="enable-background:new 0 0 146 169;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#141C10;}
-	.st1{font-family:'Taylor-Regular';}
-	.st2{font-size:754.6314px;}
-	.st3{fill:#FFFFFF;}
+	.st0{stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FAED23;}
 </style>
-<text transform="matrix(1 0 0 1 7.752 339.3428)" class="st1 st2">a</text>
+<g>
+	<path class="st1" d="M40.8,18.7L23.9,43h-8.4l1.7-34.4H133v9.8L49.3,151.1H104l21.6-24.3h8.1l-6.8,37.8H13.8v-8.4l86.8-137.5H40.8z
+		"/>
+</g>
 </svg>
