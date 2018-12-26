@@ -70,6 +70,13 @@ h3{
     line-height: 1.7;
     letter-spacing: 0.08em;
 }
+h4{
+    font-family: ibm plex mono;
+    font-weight:400;
+    color:#fff;
+    font-size:16px;
+    line-height: 1.75em;
+}
 p{
     font-family: roboto mono;
     font-weight:300;
@@ -78,13 +85,17 @@ p{
 em{
     font-family: taylor light italic;
 }
+a{
+    text-decoration: none;
+    color:#fff;
+}
 div.progress-bar{
     width:0px;
     position:fixed;
     top:0;
     left:0;
     height:10px;
-    background-color:orange;
+    background-image: linear-gradient(to right, red , yellow);
     z-index: 2;
 }
 div.click-image{
@@ -109,46 +120,48 @@ div.click-image img{
     opacity: 1;
 }
 header{
-    position:absolute;
+    position:fixed;
     display: flex;
     justify-content: space-between;
     color:#000;
-    top:20px;
-    left:20px;
-    width:80%;
+    top:0px;
+    left:50%;
+    transform: translate(-50%, 0);
+    width:95.6%;
     z-index: 1;
+    pointer-events: none;
 }
-headrer div{
-    display:inline;
-    
+header span{
+    pointer-events: none;
+}
+header div{
+    max-width: 140px;
+    text-align: right;
 }
 section.hero{
-    padding:200px;
     background-repeat: no-repeat;
     background-position:center;
     background-size:80%;
+    height: 100vh;
 }
 .first{
      height:100vh;
-        background-color:orange;
+        background-color:#1a1a1a;
       background-image:url('images/hero.svg');
         background-attachment: fixed;
 }
 .second{
     height:180vh;
-        background-color:blue;
+        background-color:#0026e0;
       background-image:url('images/click-04.svg');
 
 }
 
 section.intro{
-    margin-top:200px;
-    height:100vh;
+    max-height:100vh;
     text-align: left;
-    display: flex; 
-    align-items: flex-start;
-    justify-content: space-between;
-    padding:60px;
+    padding:60px 180px;
+    background-color:#ff4a2c;
 }
 .intro-title{
     width:30%;
@@ -160,7 +173,7 @@ section.intro{
     width:80%;
 }
 .intro-desc h3{
-    width:60%;
+    width:80%;
     line-height: 1.9;
     margin-top:80px;
     border-top:1px solid #fff;
@@ -171,7 +184,7 @@ section.parallax-1 {
     width:100%;
     position:relative;
     height:250vh;
-    background-color: #333;
+    background-color: #ff4a2c;
 }
 section.parallax-1 img{
     position: absolute;
@@ -303,7 +316,7 @@ section.type-tester{
     margin:0px 0;
     border-top:1px solid #fff;
     padding:40px 0;
-    background-color:blue;
+    background-color:#0026e0;
     min-height: 100vh;
 }
 .bg-circles{
