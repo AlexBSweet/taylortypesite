@@ -52,6 +52,10 @@ body{
     font-size:18px;
     overflow-x:hidden;
 }
+main{
+    margin-bottom:280px;
+    background-color:#1a1a1a;
+}
 img {
     display: block;
     max-width: 100%;
@@ -321,18 +325,24 @@ section.grid{
   display: grid;
     
     grid-template-columns: repeat(20, 1fr);
-    background-color:#f2f2f2;
+    background-color:#fff;
     width:80%;
     margin:100px auto;
 
 }
-
+section.image-two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:blue;
+    padding:200px 0;
+    grid-gap:40px 20px;
+}
 section.grid div{
     height:60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000;
+  color: blue;
     border-top:1px solid #000;
     padding-bottom:20px;
     cursor:auto;
@@ -433,7 +443,13 @@ div.output{
 
 footer{
     text-align: center;
-    padding:80px;
+    height:200px;
+    padding-top:40px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index: -1;
 }
 
 
