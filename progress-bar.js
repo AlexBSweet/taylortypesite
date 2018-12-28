@@ -3,7 +3,7 @@
 
 const progressBar = document.querySelector('div.progress-bar')
 const bodyTag = document.querySelector('body')
-const pixelsDownTag = document.querySelector('h3.pixels-down')
+
 
 
 document.addEventListener('scroll', function(){
@@ -16,8 +16,7 @@ document.addEventListener('scroll', function(){
     
     progressBar.style.width = percentageWidth * 100 + '%'
     
-    
-    pixelsDownTag.innerHTML = pageTop
+
     
     
 })
