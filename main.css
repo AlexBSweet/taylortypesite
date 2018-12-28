@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500');
-
 @font-face{
     font-family:Taylor Light;
     src:url('fonts/taylor-light.woff2'), url('taylor-light.woff');
@@ -101,7 +99,7 @@ h4{
     line-height: 1.75em;
 }
 p{
-    font-family: roboto mono;
+    font-family: ibm plex mono;
     font-weight:300;
     font-size:14px;
 }
