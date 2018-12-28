@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500');
+
 @font-face{
     font-family:Taylor Light;
     src:url('fonts/taylor-light.woff2'), url('taylor-light.woff');
@@ -30,7 +32,7 @@
     font-family:'Taylor Black Italic';
     src:url('fonts/taylor-blackitalic.woff2'), url('taylor-blackitalic.woff');
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500');
+
 
 ::selection{
     color:#fff;
