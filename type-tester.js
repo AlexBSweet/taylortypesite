@@ -38,11 +38,16 @@ trackingTag.addEventListener('input', function(){
 })
 
 
-
+//    const selectedTag = document.querySelector('div.select-selected')
+//const selectedContent = selectedTag.innerHTML
 
 styleTag.addEventListener('input', function(){
     
     outputTag.style.fontFamily = this.value
+    
+
+
+
     
     
 })

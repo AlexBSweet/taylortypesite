@@ -64,7 +64,7 @@ body{
     margin:0;
     font-family: taylor regular;
     letter-spacing: 0.04em;
-    font-size:18px;
+    font-size:20px;
     overflow-x:hidden;
 }
 main{
@@ -75,11 +75,7 @@ img {
     display: block;
     max-width: 100%;
 }
-@media (max-width:800px){
-    img {
-        margin-bottom:60px;
-    }
-}
+
 h1{
     font-size:200px;
     line-height: 0;
@@ -149,32 +145,16 @@ header{
     display: flex;
     justify-content: space-between;
     color:#000;
+    background-color:blue;
     top:0px;
-    left:50%;
-    transform: translate(-50%, 0);
-    width:95.6%;
+    left:0;
+    width:100%;
     z-index: 1;
     pointer-events: none;
-    mix-blend-mode: difference;   
+/*    mix-blend-mode: difference;   */
 }
-@media (max-width:960px){
-    header{
-        background-color:blue;
-        mix-blend-mode: normal;
-        width:100%;
-    }
-    header.collapse{
-        max-width:400px;
-    }
-    h4{
-        margin:20px;
-    }
-}
-
-@media(min-width:960px){
-    header.collapse{
-        max-width:140px;
-    }
+header h4{
+  margin:20px;
 }
 
 
@@ -185,6 +165,7 @@ section.hero{
     height: 100vh;
 }
 .first{
+    opacity: 0;
     animation-name:fadeIn;
     animation-duration:3s;
     animation-delay: .2s;
@@ -200,6 +181,11 @@ section.hero{
       background-image:url('images/click-04.svg');
 
 }
+.mobile-img-margin{
+    margin-top:80px;
+    margin-bottom:10px;
+}
+
 
 section.intro{
    
@@ -215,37 +201,7 @@ section.intro{
     width:50%;
     border-top:1px solid #fff;
 }
-@media (max-width:1200px){
-    section.intro{
-        padding-left:120px;
-    }
-    .intro-quote{
-        width:80%;
-    }
-    .intro-desc{
-        width:80%;
-    }
-}
-@media (max-width:800px){
-    section.intro{
-        padding:40px;
-    }
-}
-@media (max-width:650px){
-    .intro-quote{
-        width:100%;
-    }
-    .intro-quote h2{
-        font-size:36px;
-    }
-    .intro-desc{
-        width:100%;
-        margin-bottom:80px;
-    }
-    .intro-desc h3{
-        font-size:22px;
-    }
-}
+
 
 
 
@@ -258,11 +214,7 @@ section.image-two-column-flex{
 section.image-two-column-flex img{
     width:50%;
 }
-@media (max-width:1000px){
-    section.image-two-column-flex img{
-        width:100%;
-    }
-}
+
 
 
 
@@ -306,11 +258,7 @@ section.parallax {
 /*    background-image:linear-gradient(0deg, red , rgba(0, 0, 0, 0));*/
     position: relative;
 }
-@media (max-width:1000px){
-    section.parallax{
-        display: none;
-    }
-}
+
 div.parallax-1{
   position: absolute;
   z-index:;
@@ -400,9 +348,9 @@ section.grid-container{
 section.grid{
   display: grid;
     
-    grid-template-columns: repeat(20, 1fr);
+    grid-template-columns: repeat(15, 1fr);
     background-color:#fff;
-    width:80%;
+    width:95%;
     margin:100px auto;
 
 }
@@ -413,18 +361,14 @@ section.image-two-column{
     padding:200px 0;
     grid-gap:40px 20px;
 }
-@media (max-width:800px){
-    section.image-two-column{
-        grid-template-columns: 1fr;
-    }
-}
+
 section.grid div{
     height:60px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: blue;
-    border-top:1px solid #000;
+/*    border-top:1px solid #000;*/
     padding-bottom:20px;
     cursor:auto;
 }
@@ -442,6 +386,10 @@ section.grid div{
   pointer-events: none;
   font-size: 100px;
 }
+
+
+
+
 
 
 section.type-tester{
@@ -482,6 +430,7 @@ section.type-tester{
 section.options{
     display: flex;
     justify-content: space-between;
+    flex-wrap:nowrap;
     padding:80px;
     width: 80%;
     margin:0 auto;
@@ -489,15 +438,18 @@ section.options{
 div.option{
     width:20%;
 }
-div.option span{
-    float:right;
-}
+
 
 label{
     margin-bottom:20px;
+    font-family:ibm plex mono;
+    font-size:13px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 label span{
-    font-family: taylor light italic;
+    font-family: ibm plex mono;
 }
 div.output{
     min-height: 500px;
@@ -534,8 +486,20 @@ footer{
 
 
 
+select {
+    display: inline-block;
+    height:30px;
+    width:100%;
+    padding: 12px 10px 2px 2px;
+    outline: none;
+    color: #fff;
+    border: 1px solid #C8BFC4;
+    background: blue; 
+    font-family:ibm plex mono;
+    font-size:12px;
+}
 
-
+/*
 .custom-select{
     position: relative;
     
@@ -581,6 +545,7 @@ footer{
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+*/
 
 
 
@@ -682,6 +647,38 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 
+@media (max-width:800px){
+    img {
+        margin-bottom:60px;
+    }
+    section.image-two-column{
+        padding:0;
+    }
+    section.image-two-column img{
+        margin-bottom:0px;
+    }
+}
+
+
+@media (max-width:1250px){
+    div.output{
+        max-width:100%;
+        padding:0 40px;
+    }
+    section.options{
+        display: block;
+        padding:40px 0px;
+        
+    }
+    div.option{
+        margin-left:auto;
+        margin-right:auto;
+        width:200px;
+    }
+    select{
+        margin-bottom:30px;
+    }
+}
 
 
 
@@ -689,7 +686,76 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 
+@media (max-width:1200px){
+    section.intro{
+        padding-left:120px;
+    }
+    .intro-quote{
+        width:80%;
+    }
+    .intro-desc{
+        width:80%;
+    }
 
+    section.grid{
+        grid-template-columns: repeat(15, 1fr);
+    }
+}
+
+
+@media (max-width:1000px){
+    section.image-two-column-flex img{
+        width:100%;
+    }
+    section.grid-container{
+        padding:100px 0;
+    }
+     section.parallax{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:800px){
+    section.intro{
+        padding:40px;
+    }
+    div.output{
+        font-size:120px;
+    }
+    section.grid{
+        grid-template-columns: repeat(10, 1fr);
+        margin-bottom:0px;
+    }
+     section.image-two-column{
+        grid-template-columns: 1fr;
+    }
+    header h4{
+        font-size:14px;
+    }
+}
+
+
+
+@media (max-width:650px){
+    .intro-quote{
+        width:100%;
+    }
+    .intro-quote h2{
+        font-size:36px;
+    }
+    .intro-desc{
+        width:100%;
+        margin-bottom:80px;
+    }
+    .intro-desc h3{
+        font-size:22px;
+    }
+      header h4{
+        font-size:12px;
+    }
+}
 
 
 
